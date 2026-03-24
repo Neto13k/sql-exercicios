@@ -32,7 +32,7 @@ INSERT INTO pedidos (compra, valor, clientes_id) VALUES ('Iphone 17', '6500', 3)
 
 SELECT clientes.nome, pedidos.valor
 FROM clientes
-LEFT JOIN pedidos ON clientes.id = pedidos.clientes_id;
+INNER JOIN pedidos ON clientes.id = pedidos.clientes_id;
 
 --2. CONTAGEM DE PEDIDOS POR CLIENTE
 
